@@ -67,5 +67,5 @@ if st.button("Predict"):
     prediction, probability = predict_lung_metastasis(primary_site, histologic, grade,
                                                      t_stage, n_stage, brain_metastasis, liver_metastasis, bone_metastasis )
 
-    st.write("Class Label: ", prediction)  # 结果显示在右侧的列中
+    st.write("Probability of developing lung metastasis: ", prediction)  # 结果显示在右侧的列中
     st.write("Probability of developing lung metastasis: ", probability)  # 结果显示在右侧的列中
